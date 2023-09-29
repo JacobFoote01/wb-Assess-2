@@ -8,16 +8,34 @@
 // update and say "Log out". If a user clicks on the button again, its text
 // should switch from "Log Out" to "Log In".
 
-/// TODO: replace this with your code
-
+ auth.addEventListener("click", () => {
+    if (auth.innerText === "Log in"){
+        auth.innerText = "Log out"
+    } else if (auth.innerText == "Log out"){
+        auth.innerText ="Log in"
+    }
+ })
+ 
 // Send an alert
 //
 // This form will send an alert to a user via the built-in alert function.
 //
 // A user should be able to enter what they want the alert to say in the
 // text box. Then, they can submit the form to trigger the alert.
+const send_alert = document.querySelector("#send-alert")
 
-/// TODO: replace this with your code
+send_alert.addEventListener("submit", (e) =>{
+    e.preventDefault()
+    alert(alert_message.value)
+    alert_message.value = ''
+})
+
+
+//myForm.addEventListener("submit", (e) => {
+   // e.preventDefault()
+   // alert(myInput.value)
+  //  myInput.value =''
+//})
 
 // Add an item
 //
