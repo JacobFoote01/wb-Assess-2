@@ -30,17 +30,10 @@ send_alert.addEventListener("submit", (e) =>{
     alert_message.value = ''
 })
 
-
-//myForm.addEventListener("submit", (e) => {
-   // e.preventDefault()
-   // alert(myInput.value)
-  //  myInput.value =''
-//})
-
 // Add an item
 //
 // This is a pretty silly feature -- when a user clicks on the
-// button (the one that says "Double-ulick to add an item"), a new list
+// button (the one that says "Double-click to add an item"), a new list
 // item should appear.
 //
 // In other words, whenever a user clicks on the button, just
@@ -79,8 +72,15 @@ send_alert.addEventListener("submit", (e) =>{
 //   - gets whatever number is inside the input field
 //   - calls your function that calculates a factorial
 //   - puts the result of the function inside the "result" span
+const factorial_calculator = document.querySelector(`#factorial_calculator`)
+let number = ''
+let result = !number
 
-/// TODO: replace this with your code
+
+factorial_calculator.addEventListener("submit", (e) => {
+    e.preventDefault()   
+    return result 
+})
 
 // Validate a form
 //
@@ -97,4 +97,10 @@ send_alert.addEventListener("submit", (e) =>{
 // the feedback text to say "The word must be at least 4 characters long." and
 // change the color of the text to red..
 
-/// TODO: replace this with your code
+const recommend_word = document.querySelector(`#recommend_word`)
+let word = []
+
+recommend_word.addEventListener("submit", (e) =>{
+    e.preventDefault()
+    
+})

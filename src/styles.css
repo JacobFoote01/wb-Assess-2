@@ -1,3 +1,34 @@
-html{background-color: black; color: white;}
-tr {padding: 5px; text-align: left;}
-table, th, tr, td {border: 1px solid white;}
+* {
+    font-family: sans-serif; 
+    background-color: black; 
+    color: white;
+}
+
+body {
+    line-height: 30px;
+}
+
+#character_name, #lc, #submit {
+background-color: white; color: black;
+}
+
+label {
+    font-weight: normal; 
+}
+
+tr {
+    padding: 5px;
+    font-weight: normal;
+}
+
+table, tr, th, td {
+    border: 1px solid white;
+}
+
+label.team {
+    float: left;
+}
+
+.label{
+    text-align: center;
+}
