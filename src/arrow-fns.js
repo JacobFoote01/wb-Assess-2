@@ -57,12 +57,14 @@ return evens
 //   createGreetings(['Clive', 'Jill', 'Torgal']);
 //   => ['Hello, Clive!', 'Hello, Jill!', 'Hello, Torgal!']
 function createGreetings(names) {
-    let phrase =('Hello','')
-    let name = ''
-    const phraseArray =[...phrase];
-    phraseArray.forEach((names)=>{
-        return name
+    const phraseArray =[];
+
+    names.forEach((name)=>{
+        phraseArray.push(`Hello, ${name}!`)
     })
+
+    return phraseArray
+
 }
 
 // Given an array of words, return a new array where each word is uppercased
@@ -72,6 +74,21 @@ function createGreetings(names) {
 // Ex.:
 //   loudLongWords(['apple', 'pear', 'cake', 'pinata']);
 //   => ['APPLE', 'PINATA']
-function loudLongWords(words) {}
+function loudLongWords(words) {
+
+    words = words.filter((word) => {
+        if(word.length > 4){
+            return true
+        }
+    })
+
+    words = words.map((word) => {
+        return word.toUpperCase()   
+    })
+    
+    return words
+
+    return words.filter((word) => word.length > 4).map((word) => word.toUpperCase())
+}
 
 export { addNums, createGreetings, evens, giveMeTwo, loudLongWords, max };

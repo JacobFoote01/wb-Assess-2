@@ -45,7 +45,16 @@ send_alert.addEventListener("submit", (e) =>{
 //     <li>Item</li>  <!-- This was added after double-clicking -->
 //   </ol>
 
-/// TODO: replace this with your code
+const itemList = document.getElementById('list')
+const itemAddButton = document.getElementById('item-adder')
+
+itemAddButton.addEventListener('click', (event) => {
+    const li = document.createElement('li')
+    li.textContent = 'item'
+    itemList.appendChild(li)
+})
+
+
 
 // Change colors
 //
