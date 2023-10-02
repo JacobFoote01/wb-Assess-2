@@ -65,7 +65,11 @@ itemAddButton.addEventListener('click', (event) => {
 // Clicking on "Turn Stuff Red" should make text red and clicking on "Turn
 // Stuff Blue" should make text blue.
 
-/// TODO: replace this with your code
+const 
+
+blue.addEventListener("click", (e) =>{
+    
+})
 
 // Calculate factorial
 //
